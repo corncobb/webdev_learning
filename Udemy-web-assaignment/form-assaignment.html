@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1><strong>Register</strong></h1>
+        <form>
+        <div>
+            <label for="First">First Name: </label>
+            <input id="First" type="text" placeholder="John" name="First_Name" required>
+            <label for="Last">Last Name: </label>
+            <input id="Last" type="text" placeholder="Smith" name="Last_Name" required>
+        </div>
+        <div>
+            <label for="Male">Male </label>
+            <input id="Male" name="Gender" type="radio" value="Male">
+            <label for="Female">Female </label>
+            <input id="Female" name="Gender" type="radio" value="Female">
+            <label for="Other">Other </label>
+            <input id="Other" name="Gender" type="radio" value="Other">
+        </div>
+        <div>
+            <label for="Email">Email </label>
+            <input id="Email" type="email" placeholder="your email" name="Email" required>
+
+            <label for="Password">Password </label>
+            <input id="Password" type="password" name="password" pattern=".{5,10}" required title="5 to 10 characters"> <!-- 5 - 10 character limit -->
+        </div>
+        <div>
+            <label for="Birthday">Birthday </label>
+            <select id="Birthday" name="Birthday_Month" >
+                <option>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+            </select>
+
+            <select id="Birthday" name="Birthday_Day">
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+
+            <select id="Birthday" name="Birthday_Year">
+                <option>Year</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+            </select>
+        </div>
+        <div>
+            <label for="Agree">I agreee to the terms and conditions </label>
+            <input id="Agree" type="checkbox" value="True" name="checkbox" required> <!-- 5 - 10 character limit -->
+        </div>
+            <button>Submit</button>
+
+        </form>
+
+    </body>
+</html>
