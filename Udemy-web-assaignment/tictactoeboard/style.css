@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    /*background-color: yellow;
+    border: 10px solid green;*/
+}
+
+h1{
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+tbody{
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+.row-2 td {
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+  }
+
+tr td:nth-of-type(2) {
+    border-left: 1px solid black; 
+    border-right: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+
