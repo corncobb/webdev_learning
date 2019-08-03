@@ -11,7 +11,7 @@ var easyBtn = document.querySelector("#easy-btn");
 var hardBtn = document.querySelector("#hard-btn");
 var modeButtons = document.querySelectorAll(".mode");
 
-let root = document.documentElement;
+var root = document.documentElement;
 
 //var defaultBackgroundColor = "red";
 
@@ -53,7 +53,6 @@ function setupSquares(){
             }
         })
     }
-
 }
 
 function setupModeButtons(){
