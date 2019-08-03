@@ -1,3 +1,7 @@
+:root {
+    --primary: steelblue;
+}
+
 body {
     background-color: #232323;
     margin: 0;
@@ -26,7 +30,7 @@ h1 {
     line-height: 1.1;
     text-align: center;
     font-weight: normal;
-    background-color: steelblue;
+    background-color: var(--primary);
     margin: 0;
     text-transform: uppercase;
     padding: 20px 0;
@@ -45,7 +49,7 @@ h1 {
 
 .selected {
     color: white;
-    background-color: steelblue;
+    background-color: var(--primary);
 }
 
 button {
@@ -54,7 +58,7 @@ button {
     text-transform: uppercase;
     height: 100%;
     font-weight: 700;
-    color: steelblue;
+    color: var(--primary);
     letter-spacing: 1px;
     font-size: inherit;
     transition: all .3s;
@@ -70,5 +74,5 @@ button {
 
 button:hover {
     color: white;
-    background: steelblue;
+    background: var(--primary);
 }

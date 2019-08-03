@@ -11,6 +11,10 @@ var easyBtn = document.querySelector("#easy-btn");
 var hardBtn = document.querySelector("#hard-btn");
 var modeButtons = document.querySelectorAll(".mode");
 
+let root = document.documentElement;
+
+//var defaultBackgroundColor = "red";
+
 init();
 
 function init(){
@@ -35,6 +39,13 @@ function setupSquares(){
                 messageDisplay.textContent = "Correct!";
                 changeColors(clickedColor);
                 h1.style.backgroundColor = clickedColor;
+                root.style.setProperty('--primary', clickedColor);
+                /*
+                if(numSquares == 6){
+                    modeButtons[1].style.backgroundColor = clickedColor;
+                } else {
+                    modeButtons[0].style.backgroundColor = clickedColor;
+                }*/
                 resetButton.textContent = "Play Again?"
             } else {
                 this.style.backgroundColor = "#232323";
@@ -71,7 +82,8 @@ function reset(){
             squares[i].style.display = "none";
         }
     }
-    h1.style.backgroundColor = "steelblue";
+    root.style.setProperty('--primary', 'steelblue');
+    h1.style.backgroundColor = getComputedStyle(root).getPropertyValue('--primary');
 }
 
 function changeColors(color){
